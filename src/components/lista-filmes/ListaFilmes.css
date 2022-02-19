@@ -1,0 +1,83 @@
+.list-container,
+.list-box,
+.list{
+  width: 100%;
+  color: #fff;
+  overflow: hidden;
+}
+.list-container{
+  padding: 0 0 0 40px;
+  margin-top: 40px;
+  position: relative;
+}
+.list-container h1{
+  font-size: 16px;
+  margin-bottom: 10px;
+}
+.arrow-buttons{
+  list-style: none;
+}
+.arrow-buttons li{
+  width: 30px;
+  height: calc(100% - 35px);
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  background-color: rgba(90, 90, 90, 0.5);
+  color: #fff;
+
+  position: absolute;
+  bottom: 0;
+  z-index: 5;
+
+  opacity: 0;
+  cursor: pointer;
+  transition: .2s;
+}
+.arrow-buttons li:first-of-type{
+  left: 0;
+}
+.arrow-buttons li:last-of-type{
+  right: 0;
+}
+.list-container:hover .arrow-buttons li{
+  opacity: 1;
+}
+.arrow-buttons li:hover{
+  color: #000;
+  background-color: #ccc;
+}
+.list{
+  width: 100%;
+  display: flex;
+  align-items: center;
+
+  transition: .3s;
+}
+.list img{
+  width: 150px;
+  margin-right: 13px;
+
+  transform: scale(.95);
+  transition: .2s;
+  cursor: pointer;
+}
+.list img:hover{
+  transform: scale(1);
+}
+
+@media screen and (max-width: 800px) {
+  .list-container{
+    padding: 0 0 0 20px;
+  }
+  .arrow-buttons li{
+    opacity: 1;
+    background-color: rgba(90, 90, 90, 0.5);
+  }
+  .arrow-buttons li:hover{
+    background-color: #222;
+    color: #fff;
+  }
+}

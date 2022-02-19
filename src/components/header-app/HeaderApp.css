@@ -1,0 +1,214 @@
+.header-app-container{
+  width: 100%;
+  height: 70px;
+  padding: 0 40px;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 999;
+  transition: .3s;
+}
+.left-header,
+.right-header{
+  display: flex;
+  align-items: center;
+}
+.logo-box-header-app img{
+  position: relative;
+  top: 5px;
+  width: 90px;
+}
+
+.nav-menu{
+  margin-left: 20px;
+  display: none;
+}
+.nav-menu span{
+  display: flex;
+  align-items: center;
+
+  cursor: pointer;
+  transition: .3s;
+  
+  font-size: 13px;
+  color: #888;
+}
+.nav-menu span ion-icon{
+  margin-left: 5px;
+  transition: .3s;
+}
+.nav-menu span:hover{
+  color: #fff;
+}
+
+.menu{
+  margin-left: 10px;
+  display: flex;
+  list-style: none;
+}
+.menu li{
+  margin: 0 15px;
+}
+.menu li a{
+  color: #888;
+  font-size: 14px;
+  text-decoration: none;
+}
+.menu li a:hover{
+  color: #fff;
+}
+
+.right-header{
+  color: #fff;
+}
+.notification-box{
+  margin-right: 25px;
+  position: relative;
+  top: 5px;
+  cursor: pointer;
+}
+.notification-box span{
+  width: 20px;
+  height: 20px;
+
+  position: absolute;
+  top: -5px;
+  right: -5px;
+  z-index: 9;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border-radius: 50%;
+  background-color: var(--primaria);
+  color: #fff;
+}
+.notification-box ion-icon{
+  font-size: 23px;
+}
+.profile-box-header{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  position: relative;
+  cursor: pointer;
+}
+.profile-box-header img{
+  width: 30px;
+  margin-right: 5px;
+  border-radius: 5px;
+}
+.profile-box-header ion-icon{
+  transition: .2s;
+}
+
+.modal-user{
+  width: 190px;
+
+  display: block;
+  list-style: none;
+
+  position: fixed;
+  top: 60px;
+  right: 40px;
+  visibility: hidden;
+
+  border-radius: 3px;
+  background-color: #222;
+}
+.modal-user li{
+  width: 100%;
+  height: 45px;
+  padding: 0 10px;
+
+  display: flex;
+  align-items: center;
+}
+.modal-user li:hover{
+  background-color: #444;
+}
+.profile-menu img{
+  width: 30px;
+  border-radius: 5px;
+}
+.profile-menu h1{
+  margin-left: 5px;
+  font-size: 13px;
+}
+.modal-user li a{
+  text-decoration: none;
+  font-size: 15px;
+  color: #fff;
+}
+.modal-user li a ion-icon{
+  margin-right: 5px;
+  font-size: 20px;
+  position: relative;
+  top: 4px;
+}
+.active-modal-user{
+  visibility: visible;
+}
+.active-icon{
+  transform: rotate(180deg);
+}
+.active-header{
+  background-color: #000;
+}
+
+@media screen and (max-width: 800px) {
+  .header-app-container{
+    height: 60px;
+    padding: 0 20px 0 30px;
+  }
+  .logo-box-header-app img{
+    width: 60px;
+  }
+  .nav-menu{
+    display: block;
+  }
+  .menu{
+    width: 200px;
+    height: 0;
+
+    display: block;
+    visibility: hidden;
+    overflow: hidden;
+    transition: .3s;
+
+    position: fixed;
+    top: 55px;
+    left: 90px;
+
+    background-color: #222;
+  }
+  .menu li{
+    width: 100%;
+    height: 40px;
+    margin: 0;
+    padding: 0 10px;
+
+    display: flex;
+    align-items: center;
+
+    border-bottom: 1px solid #444;
+    transition: .3s;
+  }
+  .menu li:hover{
+    background-color: #444;
+  }
+  .menu-active{
+    height: 200px;
+    visibility: visible;
+  }
+  .active-ion-icon{
+    transform: rotate(180deg);
+  }
+}

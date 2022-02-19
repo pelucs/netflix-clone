@@ -1,0 +1,153 @@
+.usuarios-container{
+  width: 100%;
+  height: 100%;
+  min-height: 100vh;
+  padding-top: 150px;
+  padding-bottom: 50px;
+
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+
+  background-color: #000;
+}
+.header-profile{
+  width: 100%;
+  height: 80px;
+  padding: 0 40px;
+
+  position: absolute;
+  top: 0;
+  left: 0;
+
+  display: flex;
+  align-items: center;
+}
+
+.row-profiles-container{
+  width: 80%;
+
+  display: flex;
+  justify-content: center;
+}
+.row-profile-box{
+  width: 100%;
+  height: 100%;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.row-profile-box > h1{
+  text-align: center;
+  color: #fff;
+}
+.row-profile-box a{
+  width: 50px;
+  height: 50px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  text-decoration: none;
+  font-size: 30px;
+
+  border-radius: 5px;
+  background-color: var(--primaria);
+  color: #fff;
+}
+
+.row-profile{
+  width: 100%;
+  height: 100%;
+  margin: 20px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.profile{
+  width: 100%;
+  max-width: 150px;
+  margin: 15px 25px;
+  padding-bottom: 8px;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  
+  cursor: pointer;
+  position: relative;
+}
+.profile img{
+  width: 100%;
+  border-radius: 3px;
+}
+.profile h1{
+  margin-top: 5px;
+  font-size: 16px;
+  color: #888;
+}
+.profile:hover img{
+  border: 1px solid #fff;
+}
+.profile:hover h1{
+  color: #fff;
+}
+
+.create-profile{
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  
+  color: #fff;
+  text-align: center;
+}
+.create-profile a{
+  width: 200px;
+  height: 50px;
+  margin-top: 20px;
+
+  cursor: pointer;
+  transition: .3s;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border: 0;
+  border-radius: 3px;
+  background-color: var(--primaria);
+
+  color: #fff;
+  font-size: 15px;
+  text-decoration: none;
+}
+.create-profile a:hover{
+  transform: scale(.98);
+}
+
+@media screen and (max-width: 600px){
+  .usuarios-container{
+    padding-top: 100px;
+  }
+  .header-profile{
+    padding: 0 20px;
+  }
+  .header-profile img{
+    max-width: 90px;
+  }
+  .row-profile-box > h1{
+    font-size: 16px;
+  }
+  .row-profile{
+    padding: 0 20px;
+  }
+  .profile{
+    max-width: 100px;
+  }
+}

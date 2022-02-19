@@ -1,0 +1,80 @@
+.destaque-container{
+  width: 100%;
+}
+
+.shadow-box{
+  width: 100%;
+}
+
+.shadow-box-top{
+  background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0), rgba(0, 0, 0, .9) 90%);
+}
+.shadow-box-left{
+  padding: 140px 40px 180px 40px;
+
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+
+  background-image: linear-gradient(to left, rgba(0, 0, 0, 0), rgba(0, 0, 0, .7) 90%);
+}
+.info-film{
+  width: 100%;
+  color: #fff;
+}
+.info-film h1{
+  font-size: 5vw;
+}
+.info-film p{
+  width: 50%;
+  font-size: 14px;
+  font-weight: 400;
+}
+.info-film span{
+  margin-top: 15px;
+  display: flex;
+  align-items: center;
+  color: var(--positiva);
+}
+.info-film span ion-icon{
+  font-size: 20px;
+  margin-right: 5px;
+}
+.info-film span strong{
+  margin-left: 5px;
+}
+.inputs-box-destaque{
+  margin-top: 15px;
+  display: flex;
+}
+.inputs-box-destaque button{
+  padding: 10px;
+  margin-right: 20px;
+
+  display: flex;
+  align-items: center;
+
+  cursor: pointer;
+  transition: .3s;
+
+  border: 0;
+  border-radius: 3px;  
+}
+.inputs-box-destaque button:first-of-type{
+  background-color: var(--primaria);
+  color: #fff;
+}
+
+@media screen and (max-width: 800px){
+  .shadow-box-left{
+    padding: 140px 30px 140px 30px;
+  }
+  .info-film h1{
+    font-size: 2rem;
+  }
+  .info-film p{
+    width: 100%;
+    font-size: 13px;
+    font-weight: 400;
+  }
+}
